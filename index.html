@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-App="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+    <script src="include/jquery.min.js"></script>
+    <script src="include/angular.min.js"></script>
+    <script>
+        var app=angular.module('myApp',[]);
+        app.controller('myController',function ($scope) {
+            $scope.students=['Rohan','Mohan','Raj','Rajesh','Suresh']
+        })
+    </script>
+</head>
+<body ng-controller="myController">
+    <h1>Hello Everyone</h1>
+</body>
+</html>
